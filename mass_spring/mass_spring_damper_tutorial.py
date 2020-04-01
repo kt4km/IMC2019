@@ -81,14 +81,14 @@ for i in range(Ns+1):
 
 
 
-# #----計算結果をグラフで表示する----#
+#----計算結果をグラフで表示する----#
 fig = plt.figure()
 
 # 横軸に時間，縦軸に台車の変位でプロットする
 ax1 = fig.add_subplot(2,1,1)    
 ax1.plot(t_list, x1_list, color='red', linewidth=2)   
 ax1.set_xlim(0,50)  # 横軸の範囲を指定
-ax1.set_xticks(np.arange(0,50,5))   # x軸の目盛りを0から50を5で分割する
+ax1.set_xticks(np.arange(0,50,5))   # x軸の目盛り0から50を5で分割する
 ax1.set_ylabel('mass displacement[m]', fontsize=12)    # 縦軸にラベルを貼る
 ax1.grid()  # グリッド線を引く
 
